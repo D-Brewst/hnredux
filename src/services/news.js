@@ -10,4 +10,4 @@ export const hnApi = createApi({
   }),
 })
 
-export const { useGetArticles } = hnApi;
+export const { useGetArticlesQuery } = hnApi;
