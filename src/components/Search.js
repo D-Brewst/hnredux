@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { useGetArticlesQuery } from '../services/news';
+import { addTerm } from "../services/historySlice";
+import { useDispatch } from 'react-redux';
 
 const Search = () => {
     const [term, setTerm] = useState(null);
+
+    const dispatch = useDispatch();
 
     const {data, isFetching} = useGetArticlesQuery(term);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(e.target[0].value);
-        setTerm(e.target[0].value);
+        const word = e.target[0].value;
+        setTerm(word);
+        dispatch(addTerm(word));
     }
 
     const results = data?.hits;
@@ -32,7 +37,8 @@ const Search = () => {
                     <button className="login__btn" type="submit">Submit</button>
                 </div>
             </form>
-            <div>
+            <p style={{display: term === "" ? 'block' : 'none' }}>Please enter a search term.</p>
+            <div style={{display: term === "" ? 'none' : 'block' }}>
                 <ul>
                     {results ? (
                         results.map((article) => (

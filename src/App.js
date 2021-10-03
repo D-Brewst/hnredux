@@ -1,25 +1,21 @@
 import React from 'react';
 import Search from './components/Search';
-// import History from './components/History';
-// import Nav from './components/Nav';
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Switch,
-//   Redirect
-// } from "react-router-dom";
+import History from './components/History';
+import Nav from './components/Nav';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
-// import './styles.css';
+import './styles.css';
 
 function App() {
 
   return (
-      // <Router>
-      <div>
-        <Search/>
-      </div>
-        
-        /* <Nav/>
+      <Router>
+        <Nav/>
         <Switch>
           <Route exact path="/search">
             <Search/>
@@ -30,8 +26,8 @@ function App() {
           <Route exact path="*">
             <Redirect to="/search" />
           </Route>
-        </Switch> */
-      // </Router>
+        </Switch>
+      </Router>
   );
 }
 
