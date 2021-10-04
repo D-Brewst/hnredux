@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useGetArticlesQuery } from '../services/news';
-import { addTerm } from "../services/historySlice";
+import { addTerm } from '../services/historySlice';
 import { useDispatch } from 'react-redux';
 
 const Search = () => {
@@ -12,9 +12,11 @@ const Search = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const word = e.target[0].value;
+        const word = e.target[0].value.trim();
         setTerm(word);
-        dispatch(addTerm(word));
+        if(word){
+            dispatch(addTerm(word));
+        }
     }
 
     const results = data?.hits;
