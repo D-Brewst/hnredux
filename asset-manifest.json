@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/hnredux/static/css/main.15a4dda4.chunk.css",
+    "main.js": "/hnredux/static/js/main.a012e684.chunk.js",
+    "main.js.map": "/hnredux/static/js/main.a012e684.chunk.js.map",
+    "runtime-main.js": "/hnredux/static/js/runtime-main.4ffd5d36.js",
+    "runtime-main.js.map": "/hnredux/static/js/runtime-main.4ffd5d36.js.map",
+    "static/js/2.acd64149.chunk.js": "/hnredux/static/js/2.acd64149.chunk.js",
+    "static/js/2.acd64149.chunk.js.map": "/hnredux/static/js/2.acd64149.chunk.js.map",
+    "index.html": "/hnredux/index.html",
+    "static/css/main.15a4dda4.chunk.css.map": "/hnredux/static/css/main.15a4dda4.chunk.css.map",
+    "static/js/2.acd64149.chunk.js.LICENSE.txt": "/hnredux/static/js/2.acd64149.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ffd5d36.js",
+    "static/js/2.acd64149.chunk.js",
+    "static/css/main.15a4dda4.chunk.css",
+    "static/js/main.a012e684.chunk.js"
+  ]
+}
